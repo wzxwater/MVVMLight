@@ -49,6 +49,7 @@ public class NewsViewModel implements ViewModel {
     public final OnItemBind<NewItemViewModel> itemView = new OnItemBind<NewItemViewModel>() {
         @Override
         public void onItemBind(ItemBinding itemBinding, int position, NewItemViewModel item) {
+            System.out.println();
             itemBinding.set(com.kelin.mvvmlight.zhihu.BR.viewModel, item.storiesBean.getExtraField() != null ? R.layout.listitem_news_header : R.layout.listitem_news);
         }
     };
