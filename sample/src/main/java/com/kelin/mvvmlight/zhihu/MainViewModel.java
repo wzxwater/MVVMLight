@@ -25,10 +25,6 @@ public class MainViewModel implements ViewModel {
     //context
     private Context context;
 
-
-//    public final ItemBinding<String> itemBinding = ItemBinding.of(BR.item, R.layout.item);
-//    public final ObservableList<String> items = new ObservableArrayList<>();
-
     // viewModel for recycler header viewPager
     public final ItemBinding topItemView = ItemBinding.of(com.kelin.mvvmlight.zhihu.BR.viewModel, R.layout.viewpager_item_top_news);
     public final ObservableList<TopItemViewModel> topItemViewModel = new ObservableArrayList<>();
